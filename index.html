@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>proyecto final curso javascript marzo '19</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="escritura">
+  <div><label>Escribe algo:</label></div>
+  <textarea rows="5" id="comentario" onkeypress="return getLetter(event)"></textarea>
+  <div><label>Pulsado:<div id="pulsado"></div></label></div>
+  <label>Cadena:<div id="cadena"></div></label>
+  <div id="limpiar"><button onclick="limpiar()">Volver a empezar</button></div>
+  <div id="fin"><button onclick="terminar()">Terminar</button></div>
+</div>
+
+<div class="tiempos">
+  <label for="">Tiempo inicio:<div id="tiempoinicio"></div></label>
+  <label for="">Tiempo entre pulsaciones:<div id="tiempointermedio"></div></label>
+  <label for="">Tiempo medio entre pulsaciones:<div id="tiempomedio"></div></label>
+  <label for="">Tiempo transcurrido:<div id="tiempototal"></div></label>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

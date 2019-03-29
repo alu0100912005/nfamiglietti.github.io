@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
+.escritura, .tiempos{
+  font: caption;
+  width: 300px;
+  margin: auto;
+  border: solid;
+  padding: 20px;  
+}
+.tiempos{
+  font-family: Orbitron;
+}
+
+#cadena {
+  width: 100%;
+  display: inline-block;  
+  word-wrap: break-word;
+}
