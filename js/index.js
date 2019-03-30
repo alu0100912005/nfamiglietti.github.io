@@ -60,7 +60,9 @@ function terminar() {
   var final = mostrar(tiempos[tiempos.length - 1].getTime() - tiempos[0].getTime());
   document.querySelector("#tiempototal").innerHTML  = final + '<br/>' + tiempos[tiempos.length - 1].toLocaleTimeString();
   var div_resultados = document.querySelector(".resultados");
-	div_resultados.setAttribute("style","display:inline-block;");
+	//enseño el div de la tabla con los resultados
+  div_resultados.setAttribute("style","display:inline-block;");
+  //creo la tabla
   var tabla = document.createElement("table");
 	tabla.setAttribute("id","tabla_resultados");
   
@@ -73,6 +75,7 @@ function terminar() {
 	th = document.createElement("th");
     th.innerHTML = "Letra";
   tabla.appendChild(th);
+  //de cada tecla enseño su posición, hora en la que se pulsó y el caracter
   for(i=0; i<tiempo_size;i++){    
 				var tr = document.createElement("tr");
 					var td =  document.createElement("td");
@@ -88,10 +91,12 @@ function terminar() {
   }
   div_resultados.appendChild(tabla);
 }
+//funcion para mostrar los segundos/mili segundos
 function mostrar(mills) {
   if (mills > 1000) return mills / 1000 + " s";
   return mills + " ms";
 }
+//función que limpia de valores
 function limpiar() {
   document.querySelector("#comentario").value = "";
   document.querySelector("#pulsado").innerHTML = "";
@@ -105,7 +110,7 @@ function limpiar() {
 	document.querySelector("#tabla_resultados").remove();
 	document.querySelector(".resultados").setAttribute("style","display:none;");
 }
-
+//función para reproducir el audio recibido por parámetro
 function reproducir(url){
   var audio = new Audio(url);
   audio.play();
