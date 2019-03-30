@@ -1,10 +1,40 @@
 @import url(https://fonts.googleapis.com/css?family=Orbitron);
 .escritura, .tiempos{
   font: caption;
-  width: 300px;
-  margin: auto;
-  border: solid;
+/*   width: 20%; */
+/*   margin: auto; */
+	display:inline-block;
+/*   border: solid; */
+	height:245px;
+	vertical-align: bottom;
   padding: 20px;  
+	position: relative;
+}
+.panel{
+	width: 44%;
+  margin: auto;
+/* 	border:solid; */
+}
+.resultados{
+/* 	width: 30%; */
+	position: relative;
+	height:245px;
+  display:none;
+	font: caption;
+  margin: auto;
+/*   border: solid; */
+  padding: 20px;  
+	vertical-align: bottom;
+}
+#tabla_resultados{
+	width: 200px;	
+}
+th {
+  text-align: left;
+}
+td{
+	height: 20px;
+  vertical-align: bottom;
 }
 .tiempos{
   font-family: Orbitron;
